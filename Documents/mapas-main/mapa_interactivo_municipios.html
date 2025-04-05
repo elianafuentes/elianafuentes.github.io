@@ -1,0 +1,3249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1619738f991f0badf9ad84e0b57bc3f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1619738f991f0badf9ad84e0b57bc3f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1619738f991f0badf9ad84e0b57bc3f5 = L.map(
+                "map_1619738f991f0badf9ad84e0b57bc3f5",
+                {
+                    center: [4.5709, -74.2973],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7f0d3f322c0aac84da0fc26c98d7933d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7f0d3f322c0aac84da0fc26c98d7933d.addTo(map_1619738f991f0badf9ad84e0b57bc3f5);
+        
+    
+            var marker_cluster_46cf921d66bf44365152a71317ae867d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_dabff5aded0d3e5d9bd337ac5cf71fe2 = L.circleMarker(
+                [11.1218948364, -73.8852767944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_100efd6682d83b261ee32c997ab1bf8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8765d3aaa9afc1866f3718ced99a919 = $(`<div id="html_b8765d3aaa9afc1866f3718ced99a919" style="width: 100.0%; height: 100.0%;"><strong>SANTA MARTA, MAGDALENA</strong><br>Precio: $3,067</div>`)[0];
+                popup_100efd6682d83b261ee32c997ab1bf8e.setContent(html_b8765d3aaa9afc1866f3718ced99a919);
+            
+        
+
+        circle_marker_dabff5aded0d3e5d9bd337ac5cf71fe2.bindPopup(popup_100efd6682d83b261ee32c997ab1bf8e)
+        ;
+
+        
+    
+    
+            var circle_marker_e331a55bdfdda33a0360ae83a9b2cfc4 = L.circleMarker(
+                [4.7675466537, -74.1415557861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_2f6041bdd557b64e3ed0679c36de5578 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dd1c9da736fce8bde88a54791d2a640 = $(`<div id="html_7dd1c9da736fce8bde88a54791d2a640" style="width: 100.0%; height: 100.0%;"><strong>COTA, CUNDINAMARCA</strong><br>Precio: $2,550</div>`)[0];
+                popup_2f6041bdd557b64e3ed0679c36de5578.setContent(html_7dd1c9da736fce8bde88a54791d2a640);
+            
+        
+
+        circle_marker_e331a55bdfdda33a0360ae83a9b2cfc4.bindPopup(popup_2f6041bdd557b64e3ed0679c36de5578)
+        ;
+
+        
+    
+    
+            var circle_marker_24a01a8baac179135e978db23a4af16b = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b32de0a625d162e885e0ce7077d136e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68700320514b3109a5d2081c2fedfcb0 = $(`<div id="html_68700320514b3109a5d2081c2fedfcb0" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,110</div>`)[0];
+                popup_b32de0a625d162e885e0ce7077d136e9.setContent(html_68700320514b3109a5d2081c2fedfcb0);
+            
+        
+
+        circle_marker_24a01a8baac179135e978db23a4af16b.bindPopup(popup_b32de0a625d162e885e0ce7077d136e9)
+        ;
+
+        
+    
+    
+            var circle_marker_ca5f89b09308ce1aec39ab220c128e20 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b4feba858de59066d369cb92e8b3abb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19a7937105e5d4d0007a907b7151eb0d = $(`<div id="html_19a7937105e5d4d0007a907b7151eb0d" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,369</div>`)[0];
+                popup_b4feba858de59066d369cb92e8b3abb7.setContent(html_19a7937105e5d4d0007a907b7151eb0d);
+            
+        
+
+        circle_marker_ca5f89b09308ce1aec39ab220c128e20.bindPopup(popup_b4feba858de59066d369cb92e8b3abb7)
+        ;
+
+        
+    
+    
+            var circle_marker_e3ee89083c01db69f33d2ba8a1f37e60 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_4b04f1eca9c119841c4f3042386e6279 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1aad193714b140145f041ebe5b0c7f6 = $(`<div id="html_e1aad193714b140145f041ebe5b0c7f6" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_4b04f1eca9c119841c4f3042386e6279.setContent(html_e1aad193714b140145f041ebe5b0c7f6);
+            
+        
+
+        circle_marker_e3ee89083c01db69f33d2ba8a1f37e60.bindPopup(popup_4b04f1eca9c119841c4f3042386e6279)
+        ;
+
+        
+    
+    
+            var circle_marker_7c6558b2982c68646d0c237b7257c320 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_dafbd5e1c25ea5d0e7bc337f863f46df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73da51bb4d80bb7bfa19cd401e29bde9 = $(`<div id="html_73da51bb4d80bb7bfa19cd401e29bde9" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_dafbd5e1c25ea5d0e7bc337f863f46df.setContent(html_73da51bb4d80bb7bfa19cd401e29bde9);
+            
+        
+
+        circle_marker_7c6558b2982c68646d0c237b7257c320.bindPopup(popup_dafbd5e1c25ea5d0e7bc337f863f46df)
+        ;
+
+        
+    
+    
+            var circle_marker_03c1dde031bb6f45b113d29251375882 = L.circleMarker(
+                [4.8420209885, -75.6699371338],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_87e428ea9456c7e7eaebfa4fea957d4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a49f34629d3ff635f1e761c92c29c7d = $(`<div id="html_5a49f34629d3ff635f1e761c92c29c7d" style="width: 100.0%; height: 100.0%;"><strong>DOSQUEBRADAS, RISARALDA</strong><br>Precio: $3,499</div>`)[0];
+                popup_87e428ea9456c7e7eaebfa4fea957d4f.setContent(html_5a49f34629d3ff635f1e761c92c29c7d);
+            
+        
+
+        circle_marker_03c1dde031bb6f45b113d29251375882.bindPopup(popup_87e428ea9456c7e7eaebfa4fea957d4f)
+        ;
+
+        
+    
+    
+            var circle_marker_1b666516b011c25a09738d088e3e051b = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_00bfc075d0f33eff0291339588d94c69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a03399dd3c71689cab2799492453b75 = $(`<div id="html_4a03399dd3c71689cab2799492453b75" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_00bfc075d0f33eff0291339588d94c69.setContent(html_4a03399dd3c71689cab2799492453b75);
+            
+        
+
+        circle_marker_1b666516b011c25a09738d088e3e051b.bindPopup(popup_00bfc075d0f33eff0291339588d94c69)
+        ;
+
+        
+    
+    
+            var circle_marker_044a4b0537b18e927dc8abcc6fea9e5f = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_0f588689c113d17e5dd54e24f1ab2178 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ed7f229082407f926f159636ce3417f = $(`<div id="html_3ed7f229082407f926f159636ce3417f" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,190</div>`)[0];
+                popup_0f588689c113d17e5dd54e24f1ab2178.setContent(html_3ed7f229082407f926f159636ce3417f);
+            
+        
+
+        circle_marker_044a4b0537b18e927dc8abcc6fea9e5f.bindPopup(popup_0f588689c113d17e5dd54e24f1ab2178)
+        ;
+
+        
+    
+    
+            var circle_marker_d120a8e4fbe81d34156e805e0b9515e6 = L.circleMarker(
+                [4.4678792953, -75.6567459106],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_9452b1ba20fa2fbf9f1e258c3628e6d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcc7b2ce50f3bad584370de180c7b035 = $(`<div id="html_bcc7b2ce50f3bad584370de180c7b035" style="width: 100.0%; height: 100.0%;"><strong>CALARCA, QUINDIO</strong><br>Precio: $3,599</div>`)[0];
+                popup_9452b1ba20fa2fbf9f1e258c3628e6d8.setContent(html_bcc7b2ce50f3bad584370de180c7b035);
+            
+        
+
+        circle_marker_d120a8e4fbe81d34156e805e0b9515e6.bindPopup(popup_9452b1ba20fa2fbf9f1e258c3628e6d8)
+        ;
+
+        
+    
+    
+            var circle_marker_627fb12a7571b16f9a770a920cbceff8 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b05c828c5741f801f1e3454a1e9b59e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56dd829c6515c929dfe862e523ea2f9b = $(`<div id="html_56dd829c6515c929dfe862e523ea2f9b" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,499</div>`)[0];
+                popup_b05c828c5741f801f1e3454a1e9b59e2.setContent(html_56dd829c6515c929dfe862e523ea2f9b);
+            
+        
+
+        circle_marker_627fb12a7571b16f9a770a920cbceff8.bindPopup(popup_b05c828c5741f801f1e3454a1e9b59e2)
+        ;
+
+        
+    
+    
+            var circle_marker_d23102102f9b94cac562829a5cdb914e = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_d5c64f1db4d8b9bf02e7ac9ee3ee857f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5319bfc815d49ec8a55c9b3c5516259 = $(`<div id="html_d5319bfc815d49ec8a55c9b3c5516259" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,498</div>`)[0];
+                popup_d5c64f1db4d8b9bf02e7ac9ee3ee857f.setContent(html_d5319bfc815d49ec8a55c9b3c5516259);
+            
+        
+
+        circle_marker_d23102102f9b94cac562829a5cdb914e.bindPopup(popup_d5c64f1db4d8b9bf02e7ac9ee3ee857f)
+        ;
+
+        
+    
+    
+            var circle_marker_8383b07a7f5a42c64845a66159f3f6de = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b4b64358899b6c664692427c301bf7fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05df7a1b3ed35e8465adeba9d62bb2c9 = $(`<div id="html_05df7a1b3ed35e8465adeba9d62bb2c9" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,490</div>`)[0];
+                popup_b4b64358899b6c664692427c301bf7fd.setContent(html_05df7a1b3ed35e8465adeba9d62bb2c9);
+            
+        
+
+        circle_marker_8383b07a7f5a42c64845a66159f3f6de.bindPopup(popup_b4b64358899b6c664692427c301bf7fd)
+        ;
+
+        
+    
+    
+            var circle_marker_630d0df7fc2739db10f8045a62ffc31b = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8aee67759d13d8416e0a03d7b096b02e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05f242946058f276109bb89157d9bcbc = $(`<div id="html_05f242946058f276109bb89157d9bcbc" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_8aee67759d13d8416e0a03d7b096b02e.setContent(html_05f242946058f276109bb89157d9bcbc);
+            
+        
+
+        circle_marker_630d0df7fc2739db10f8045a62ffc31b.bindPopup(popup_8aee67759d13d8416e0a03d7b096b02e)
+        ;
+
+        
+    
+    
+            var circle_marker_5afa74eb71594160ac0e7342ffaf4bbd = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_853782c93ad2602fc3654813b5ba71e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b82e1e476aa33408a3aef2dd353935cc = $(`<div id="html_b82e1e476aa33408a3aef2dd353935cc" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_853782c93ad2602fc3654813b5ba71e8.setContent(html_b82e1e476aa33408a3aef2dd353935cc);
+            
+        
+
+        circle_marker_5afa74eb71594160ac0e7342ffaf4bbd.bindPopup(popup_853782c93ad2602fc3654813b5ba71e8)
+        ;
+
+        
+    
+    
+            var circle_marker_e6e3ff20520243967dd9f0851d9ca46d = L.circleMarker(
+                [5.6224880219, -73.8042449951],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_6c75d411a1eb00f93f97877287c29ec3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdc5b3c661cbd398d5706cb8465002f2 = $(`<div id="html_fdc5b3c661cbd398d5706cb8465002f2" style="width: 100.0%; height: 100.0%;"><strong>CHIQUINQUIRA, BOYACA</strong><br>Precio: $2,669</div>`)[0];
+                popup_6c75d411a1eb00f93f97877287c29ec3.setContent(html_fdc5b3c661cbd398d5706cb8465002f2);
+            
+        
+
+        circle_marker_e6e3ff20520243967dd9f0851d9ca46d.bindPopup(popup_6c75d411a1eb00f93f97877287c29ec3)
+        ;
+
+        
+    
+    
+            var circle_marker_521581aaaee0ed79fa5309227714602b = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_00e266de1c8d1cc20afd96d4e24918ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a55d1a09edc2604d7dfb748da26d0ff = $(`<div id="html_5a55d1a09edc2604d7dfb748da26d0ff" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,030</div>`)[0];
+                popup_00e266de1c8d1cc20afd96d4e24918ba.setContent(html_5a55d1a09edc2604d7dfb748da26d0ff);
+            
+        
+
+        circle_marker_521581aaaee0ed79fa5309227714602b.bindPopup(popup_00e266de1c8d1cc20afd96d4e24918ba)
+        ;
+
+        
+    
+    
+            var circle_marker_c26a19d84ebb7c4b0b4948f4e11bb555 = L.circleMarker(
+                [11.1218948364, -73.8852767944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_0e584bbec2e0423cda151309feeb94e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6eacf35136348c39f3b7199b703403b2 = $(`<div id="html_6eacf35136348c39f3b7199b703403b2" style="width: 100.0%; height: 100.0%;"><strong>SANTA MARTA, MAGDALENA</strong><br>Precio: $3,067</div>`)[0];
+                popup_0e584bbec2e0423cda151309feeb94e5.setContent(html_6eacf35136348c39f3b7199b703403b2);
+            
+        
+
+        circle_marker_c26a19d84ebb7c4b0b4948f4e11bb555.bindPopup(popup_0e584bbec2e0423cda151309feeb94e5)
+        ;
+
+        
+    
+    
+            var circle_marker_fc67b2049ef945c3d37bfd284a108597 = L.circleMarker(
+                [4.0284080505, -76.0325012207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_c88721c83756573ca8c4fa55dad1101b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc77a5e1db1965b9dd89cb936cfae3d3 = $(`<div id="html_fc77a5e1db1965b9dd89cb936cfae3d3" style="width: 100.0%; height: 100.0%;"><strong>TULUA, VALLE DEL CAUCA</strong><br>Precio: $3,390</div>`)[0];
+                popup_c88721c83756573ca8c4fa55dad1101b.setContent(html_fc77a5e1db1965b9dd89cb936cfae3d3);
+            
+        
+
+        circle_marker_fc67b2049ef945c3d37bfd284a108597.bindPopup(popup_c88721c83756573ca8c4fa55dad1101b)
+        ;
+
+        
+    
+    
+            var circle_marker_d7f117a6c564d32da35bd1f5c391f134 = L.circleMarker(
+                [5.8906025887, -73.0670928955],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_49335d0b257f8fefe58e52872555e79e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a0134ff104b8e9f34940aa147856d1a = $(`<div id="html_4a0134ff104b8e9f34940aa147856d1a" style="width: 100.0%; height: 100.0%;"><strong>DUITAMA, BOYACA</strong><br>Precio: $2,329</div>`)[0];
+                popup_49335d0b257f8fefe58e52872555e79e.setContent(html_4a0134ff104b8e9f34940aa147856d1a);
+            
+        
+
+        circle_marker_d7f117a6c564d32da35bd1f5c391f134.bindPopup(popup_49335d0b257f8fefe58e52872555e79e)
+        ;
+
+        
+    
+    
+            var circle_marker_440fb8645c421dbd045db7f837bef40f = L.circleMarker(
+                [4.8880600929, -73.9658737183],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b16796b41c1b4aea032fb2b7452ffe44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33cf7b0fed294b6daf546cc03342e7d4 = $(`<div id="html_33cf7b0fed294b6daf546cc03342e7d4" style="width: 100.0%; height: 100.0%;"><strong>SOPO, CUNDINAMARCA</strong><br>Precio: $2,499</div>`)[0];
+                popup_b16796b41c1b4aea032fb2b7452ffe44.setContent(html_33cf7b0fed294b6daf546cc03342e7d4);
+            
+        
+
+        circle_marker_440fb8645c421dbd045db7f837bef40f.bindPopup(popup_b16796b41c1b4aea032fb2b7452ffe44)
+        ;
+
+        
+    
+    
+            var circle_marker_7f81c10e3307c2a8935471f26a904c15 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_e1f15ad512ec7327a0bac6b8c4bef0f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81ad3feef3e9673c4e76ba95f0fc770e = $(`<div id="html_81ad3feef3e9673c4e76ba95f0fc770e" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_e1f15ad512ec7327a0bac6b8c4bef0f4.setContent(html_81ad3feef3e9673c4e76ba95f0fc770e);
+            
+        
+
+        circle_marker_7f81c10e3307c2a8935471f26a904c15.bindPopup(popup_e1f15ad512ec7327a0bac6b8c4bef0f4)
+        ;
+
+        
+    
+    
+            var circle_marker_bb51afda7adfdf5605b74b5f72f5c816 = L.circleMarker(
+                [6.1792793274, -75.6142044067],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_d22fb0b2628e1f8aecc2bb8837a6c8eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e9f4a268bbb37153b6c772aaf205e89 = $(`<div id="html_2e9f4a268bbb37153b6c772aaf205e89" style="width: 100.0%; height: 100.0%;"><strong>ITAGUI, ANTIOQUIA</strong><br>Precio: $3,590</div>`)[0];
+                popup_d22fb0b2628e1f8aecc2bb8837a6c8eb.setContent(html_2e9f4a268bbb37153b6c772aaf205e89);
+            
+        
+
+        circle_marker_bb51afda7adfdf5605b74b5f72f5c816.bindPopup(popup_d22fb0b2628e1f8aecc2bb8837a6c8eb)
+        ;
+
+        
+    
+    
+            var circle_marker_ba4182fd347a4927979c15479b0add12 = L.circleMarker(
+                [4.8036627769, -75.795791626],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_45d0b2a16e85e2383d1637b6181d238e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85a4a448377d1beb862b898877721565 = $(`<div id="html_85a4a448377d1beb862b898877721565" style="width: 100.0%; height: 100.0%;"><strong>PEREIRA, RISARALDA</strong><br>Precio: $3,397</div>`)[0];
+                popup_45d0b2a16e85e2383d1637b6181d238e.setContent(html_85a4a448377d1beb862b898877721565);
+            
+        
+
+        circle_marker_ba4182fd347a4927979c15479b0add12.bindPopup(popup_45d0b2a16e85e2383d1637b6181d238e)
+        ;
+
+        
+    
+    
+            var circle_marker_4d9a313569496935e7f38ee490f9eb88 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3165b1c00c77e4b14669afcb287d404d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2331cc74bc4692bfc30942dc15c6325a = $(`<div id="html_2331cc74bc4692bfc30942dc15c6325a" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_3165b1c00c77e4b14669afcb287d404d.setContent(html_2331cc74bc4692bfc30942dc15c6325a);
+            
+        
+
+        circle_marker_4d9a313569496935e7f38ee490f9eb88.bindPopup(popup_3165b1c00c77e4b14669afcb287d404d)
+        ;
+
+        
+    
+    
+            var circle_marker_64b24ab2a3bdee9a0a6fdf6713ff29d4 = L.circleMarker(
+                [4.8578238487, -74.0380935669],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_68ea0d39ce283fdbf141b23d473d3ce7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1748a8de5461da182651ee4c1b96ab80 = $(`<div id="html_1748a8de5461da182651ee4c1b96ab80" style="width: 100.0%; height: 100.0%;"><strong>CHIA, CUNDINAMARCA</strong><br>Precio: $2,599</div>`)[0];
+                popup_68ea0d39ce283fdbf141b23d473d3ce7.setContent(html_1748a8de5461da182651ee4c1b96ab80);
+            
+        
+
+        circle_marker_64b24ab2a3bdee9a0a6fdf6713ff29d4.bindPopup(popup_68ea0d39ce283fdbf141b23d473d3ce7)
+        ;
+
+        
+    
+    
+            var circle_marker_3f6db0bd752497fc77fb49e94fc37b0a = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_781e7ba7f1ce3694e12dfecdea38fff2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9983fcca6233a1cbf640dfb18ebbb5e3 = $(`<div id="html_9983fcca6233a1cbf640dfb18ebbb5e3" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,384</div>`)[0];
+                popup_781e7ba7f1ce3694e12dfecdea38fff2.setContent(html_9983fcca6233a1cbf640dfb18ebbb5e3);
+            
+        
+
+        circle_marker_3f6db0bd752497fc77fb49e94fc37b0a.bindPopup(popup_781e7ba7f1ce3694e12dfecdea38fff2)
+        ;
+
+        
+    
+    
+            var circle_marker_4dff825bfa7b409f39fe13b0184f9ef9 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_ebf683ad580a7133eb66e60a7cdc7f60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8f451c7cf3314774e9d4d22a4b27ba7 = $(`<div id="html_d8f451c7cf3314774e9d4d22a4b27ba7" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,391</div>`)[0];
+                popup_ebf683ad580a7133eb66e60a7cdc7f60.setContent(html_d8f451c7cf3314774e9d4d22a4b27ba7);
+            
+        
+
+        circle_marker_4dff825bfa7b409f39fe13b0184f9ef9.bindPopup(popup_ebf683ad580a7133eb66e60a7cdc7f60)
+        ;
+
+        
+    
+    
+            var circle_marker_1ff28041d6a01a5df411a2ef6f60d6ea = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8650266c9336f40009a1eb7f070d3910 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d7b8a836133d1358b0793bdde52be9b = $(`<div id="html_7d7b8a836133d1358b0793bdde52be9b" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_8650266c9336f40009a1eb7f070d3910.setContent(html_7d7b8a836133d1358b0793bdde52be9b);
+            
+        
+
+        circle_marker_1ff28041d6a01a5df411a2ef6f60d6ea.bindPopup(popup_8650266c9336f40009a1eb7f070d3910)
+        ;
+
+        
+    
+    
+            var circle_marker_1856066bd71ee604416ac64dede1024b = L.circleMarker(
+                [4.0284080505, -76.0325012207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_a594a65ccea72038fde38f10266aa6dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b82975b82737448b822c6a3b6923f696 = $(`<div id="html_b82975b82737448b822c6a3b6923f696" style="width: 100.0%; height: 100.0%;"><strong>TULUA, VALLE DEL CAUCA</strong><br>Precio: $3,380</div>`)[0];
+                popup_a594a65ccea72038fde38f10266aa6dc.setContent(html_b82975b82737448b822c6a3b6923f696);
+            
+        
+
+        circle_marker_1856066bd71ee604416ac64dede1024b.bindPopup(popup_a594a65ccea72038fde38f10266aa6dc)
+        ;
+
+        
+    
+    
+            var circle_marker_b21495c9d1d66ed247ac03adf13963c3 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_ff7f3b7eb95dea9c21c331ea85301182 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b185ca7b0b78a9590a412143a224ba49 = $(`<div id="html_b185ca7b0b78a9590a412143a224ba49" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,120</div>`)[0];
+                popup_ff7f3b7eb95dea9c21c331ea85301182.setContent(html_b185ca7b0b78a9590a412143a224ba49);
+            
+        
+
+        circle_marker_b21495c9d1d66ed247ac03adf13963c3.bindPopup(popup_ff7f3b7eb95dea9c21c331ea85301182)
+        ;
+
+        
+    
+    
+            var circle_marker_d88e9ea468544912c5e4feb8bcf870fd = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b959805448dc754def0404a694e7338b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3486295fe71e880b8a6b4e23acc5bcb7 = $(`<div id="html_3486295fe71e880b8a6b4e23acc5bcb7" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,449</div>`)[0];
+                popup_b959805448dc754def0404a694e7338b.setContent(html_3486295fe71e880b8a6b4e23acc5bcb7);
+            
+        
+
+        circle_marker_d88e9ea468544912c5e4feb8bcf870fd.bindPopup(popup_b959805448dc754def0404a694e7338b)
+        ;
+
+        
+    
+    
+            var circle_marker_d65ff8b1e36684b73bb77e65f238379d = L.circleMarker(
+                [6.1543951035, -75.5468673706],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_d2338eb0a3a10d73a45f360e3467170b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_819b5d217f83043efd41a06f7f7975e7 = $(`<div id="html_819b5d217f83043efd41a06f7f7975e7" style="width: 100.0%; height: 100.0%;"><strong>ENVIGADO, ANTIOQUIA</strong><br>Precio: $3,590</div>`)[0];
+                popup_d2338eb0a3a10d73a45f360e3467170b.setContent(html_819b5d217f83043efd41a06f7f7975e7);
+            
+        
+
+        circle_marker_d65ff8b1e36684b73bb77e65f238379d.bindPopup(popup_d2338eb0a3a10d73a45f360e3467170b)
+        ;
+
+        
+    
+    
+            var circle_marker_699bd4af32e13043eefae76dddb97544 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_4fcfbef2fc2a4df9d454dbf02cd44fee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2717f9da1ed4749373475522fb4aed9 = $(`<div id="html_a2717f9da1ed4749373475522fb4aed9" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_4fcfbef2fc2a4df9d454dbf02cd44fee.setContent(html_a2717f9da1ed4749373475522fb4aed9);
+            
+        
+
+        circle_marker_699bd4af32e13043eefae76dddb97544.bindPopup(popup_4fcfbef2fc2a4df9d454dbf02cd44fee)
+        ;
+
+        
+    
+    
+            var circle_marker_c05c1652e9dcd755ec7836f53611c22b = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_a1708187a913fd3bb02034fd81512605 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_581e27cef9e54baadb1db2b29e165d56 = $(`<div id="html_581e27cef9e54baadb1db2b29e165d56" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,700</div>`)[0];
+                popup_a1708187a913fd3bb02034fd81512605.setContent(html_581e27cef9e54baadb1db2b29e165d56);
+            
+        
+
+        circle_marker_c05c1652e9dcd755ec7836f53611c22b.bindPopup(popup_a1708187a913fd3bb02034fd81512605)
+        ;
+
+        
+    
+    
+            var circle_marker_4f1654d6632636e36c6ffb7257e5f73d = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_e393fa4d735feb2d8cfb56b7a85648f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab5c0d9e9cc695f508bd0b8055cee403 = $(`<div id="html_ab5c0d9e9cc695f508bd0b8055cee403" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,030</div>`)[0];
+                popup_e393fa4d735feb2d8cfb56b7a85648f7.setContent(html_ab5c0d9e9cc695f508bd0b8055cee403);
+            
+        
+
+        circle_marker_4f1654d6632636e36c6ffb7257e5f73d.bindPopup(popup_e393fa4d735feb2d8cfb56b7a85648f7)
+        ;
+
+        
+    
+    
+            var circle_marker_2f1ab1a7497bb6dc113c32e28d09792e = L.circleMarker(
+                [4.5818662643, -74.2402954102],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_723107ae69632b7de72e1017139cedf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80fc214a8f0d9b2c5b8c9c63c76ed51d = $(`<div id="html_80fc214a8f0d9b2c5b8c9c63c76ed51d" style="width: 100.0%; height: 100.0%;"><strong>SOACHA, CUNDINAMARCA</strong><br>Precio: $2,381</div>`)[0];
+                popup_723107ae69632b7de72e1017139cedf7.setContent(html_80fc214a8f0d9b2c5b8c9c63c76ed51d);
+            
+        
+
+        circle_marker_2f1ab1a7497bb6dc113c32e28d09792e.bindPopup(popup_723107ae69632b7de72e1017139cedf7)
+        ;
+
+        
+    
+    
+            var circle_marker_c9ad322f2bac44d75b35f9b4e8c909c5 = L.circleMarker(
+                [7.0797047615, -73.0679931641],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3b600eb347ff34e4719fbdd0b4a94ad8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c0d02eab973bf2a7158408133ad271f = $(`<div id="html_9c0d02eab973bf2a7158408133ad271f" style="width: 100.0%; height: 100.0%;"><strong>FLORIDABLANCA, SANTANDER</strong><br>Precio: $2,499</div>`)[0];
+                popup_3b600eb347ff34e4719fbdd0b4a94ad8.setContent(html_9c0d02eab973bf2a7158408133ad271f);
+            
+        
+
+        circle_marker_c9ad322f2bac44d75b35f9b4e8c909c5.bindPopup(popup_3b600eb347ff34e4719fbdd0b4a94ad8)
+        ;
+
+        
+    
+    
+            var circle_marker_b003138ef597da59cba020622a8eef21 = L.circleMarker(
+                [4.4995012283, -75.724899292],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_ff0683b1e01a41c0d89d892649d67309 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2b12fdc654b77bfffd1fdc7e671fa50 = $(`<div id="html_b2b12fdc654b77bfffd1fdc7e671fa50" style="width: 100.0%; height: 100.0%;"><strong>ARMENIA, QUINDIO</strong><br>Precio: $3,699</div>`)[0];
+                popup_ff0683b1e01a41c0d89d892649d67309.setContent(html_b2b12fdc654b77bfffd1fdc7e671fa50);
+            
+        
+
+        circle_marker_b003138ef597da59cba020622a8eef21.bindPopup(popup_ff0683b1e01a41c0d89d892649d67309)
+        ;
+
+        
+    
+    
+            var circle_marker_703cad4b7fed650ae5e100bb7d954894 = L.circleMarker(
+                [4.6727142334, -74.2357330322],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8b5119b377061ea41287881dea9d348b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9d3c4aff705f3b54f62c1cb92b5a428 = $(`<div id="html_e9d3c4aff705f3b54f62c1cb92b5a428" style="width: 100.0%; height: 100.0%;"><strong>MOSQUERA, CUNDINAMARCA</strong><br>Precio: $2,550</div>`)[0];
+                popup_8b5119b377061ea41287881dea9d348b.setContent(html_e9d3c4aff705f3b54f62c1cb92b5a428);
+            
+        
+
+        circle_marker_703cad4b7fed650ae5e100bb7d954894.bindPopup(popup_8b5119b377061ea41287881dea9d348b)
+        ;
+
+        
+    
+    
+            var circle_marker_5e2cf0e24874d590744165718d17360b = L.circleMarker(
+                [5.6466722488, -72.8709564209],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8026bfaa2abb8c4ebc83ae6d14082808 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85b099a9dbdb06d60d56e2297c56b377 = $(`<div id="html_85b099a9dbdb06d60d56e2297c56b377" style="width: 100.0%; height: 100.0%;"><strong>SOGAMOSO, BOYACA</strong><br>Precio: $2,499</div>`)[0];
+                popup_8026bfaa2abb8c4ebc83ae6d14082808.setContent(html_85b099a9dbdb06d60d56e2297c56b377);
+            
+        
+
+        circle_marker_5e2cf0e24874d590744165718d17360b.bindPopup(popup_8026bfaa2abb8c4ebc83ae6d14082808)
+        ;
+
+        
+    
+    
+            var circle_marker_229aac97ed84dbc328a309f5e0e6fda6 = L.circleMarker(
+                [4.8036627769, -75.795791626],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_843680c04cdec8a13b8798643bc5b7ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70386aec2548c710ac2265b1faf9c539 = $(`<div id="html_70386aec2548c710ac2265b1faf9c539" style="width: 100.0%; height: 100.0%;"><strong>PEREIRA, RISARALDA</strong><br>Precio: $3,398</div>`)[0];
+                popup_843680c04cdec8a13b8798643bc5b7ab.setContent(html_70386aec2548c710ac2265b1faf9c539);
+            
+        
+
+        circle_marker_229aac97ed84dbc328a309f5e0e6fda6.bindPopup(popup_843680c04cdec8a13b8798643bc5b7ab)
+        ;
+
+        
+    
+    
+            var circle_marker_37c87733844f759896960969007ebd77 = L.circleMarker(
+                [5.9556174278, -73.6234512329],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_91215646a2c1cdf0d20e38cecacf945a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67016235e7d0044a42db6d47d01307c8 = $(`<div id="html_67016235e7d0044a42db6d47d01307c8" style="width: 100.0%; height: 100.0%;"><strong>BARBOSA, SANTANDER</strong><br>Precio: $2,349</div>`)[0];
+                popup_91215646a2c1cdf0d20e38cecacf945a.setContent(html_67016235e7d0044a42db6d47d01307c8);
+            
+        
+
+        circle_marker_37c87733844f759896960969007ebd77.bindPopup(popup_91215646a2c1cdf0d20e38cecacf945a)
+        ;
+
+        
+    
+    
+            var circle_marker_9604b8a847352cbb91469c44a9f87840 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3d6aab86e4cccb0fb29aa4d7f7820475 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd1092fae5180a40b799e931e0b6440d = $(`<div id="html_cd1092fae5180a40b799e931e0b6440d" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $2,972</div>`)[0];
+                popup_3d6aab86e4cccb0fb29aa4d7f7820475.setContent(html_cd1092fae5180a40b799e931e0b6440d);
+            
+        
+
+        circle_marker_9604b8a847352cbb91469c44a9f87840.bindPopup(popup_3d6aab86e4cccb0fb29aa4d7f7820475)
+        ;
+
+        
+    
+    
+            var circle_marker_0fc9b15b20dc77099fcb7edfb5dde0b7 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_92ee1f1453be1ae2103f178fa822b8a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08fb405ac8b6ac4adb1044bed09b59fc = $(`<div id="html_08fb405ac8b6ac4adb1044bed09b59fc" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_92ee1f1453be1ae2103f178fa822b8a4.setContent(html_08fb405ac8b6ac4adb1044bed09b59fc);
+            
+        
+
+        circle_marker_0fc9b15b20dc77099fcb7edfb5dde0b7.bindPopup(popup_92ee1f1453be1ae2103f178fa822b8a4)
+        ;
+
+        
+    
+    
+            var circle_marker_c5518f2a2d0d88c88e794db4c5171c82 = L.circleMarker(
+                [8.1811084747, -75.689239502],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3708d5922ec1587c15b39a85c4e0a6c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e31b544ec069a5f33e6e209203db31fe = $(`<div id="html_e31b544ec069a5f33e6e209203db31fe" style="width: 100.0%; height: 100.0%;"><strong>PLANETA RICA, CORDOBA</strong><br>Precio: $2,950</div>`)[0];
+                popup_3708d5922ec1587c15b39a85c4e0a6c3.setContent(html_e31b544ec069a5f33e6e209203db31fe);
+            
+        
+
+        circle_marker_c5518f2a2d0d88c88e794db4c5171c82.bindPopup(popup_3708d5922ec1587c15b39a85c4e0a6c3)
+        ;
+
+        
+    
+    
+            var circle_marker_e64a2045680553625831eff2b5fc11c8 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_99b9ff8af56497521e928a0c42e62fd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce08c6fc4c4619f2d5ec7f02972c9647 = $(`<div id="html_ce08c6fc4c4619f2d5ec7f02972c9647" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,499</div>`)[0];
+                popup_99b9ff8af56497521e928a0c42e62fd1.setContent(html_ce08c6fc4c4619f2d5ec7f02972c9647);
+            
+        
+
+        circle_marker_e64a2045680553625831eff2b5fc11c8.bindPopup(popup_99b9ff8af56497521e928a0c42e62fd1)
+        ;
+
+        
+    
+    
+            var circle_marker_2a4271052e485bc5da709cf7e2d32ae8 = L.circleMarker(
+                [11.1218948364, -73.8852767944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_4b72930431c7337665f7b91468cdb4f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_546b5f373acdaf06e0d3e3716596f369 = $(`<div id="html_546b5f373acdaf06e0d3e3716596f369" style="width: 100.0%; height: 100.0%;"><strong>SANTA MARTA, MAGDALENA</strong><br>Precio: $3,067</div>`)[0];
+                popup_4b72930431c7337665f7b91468cdb4f9.setContent(html_546b5f373acdaf06e0d3e3716596f369);
+            
+        
+
+        circle_marker_2a4271052e485bc5da709cf7e2d32ae8.bindPopup(popup_4b72930431c7337665f7b91468cdb4f9)
+        ;
+
+        
+    
+    
+            var circle_marker_28b0c4db84011402b15c648a3d918f8a = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_4bb3bbb12261e5a5d4aa2d357b76a4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_918513ffaf6f04e037e523f9795da863 = $(`<div id="html_918513ffaf6f04e037e523f9795da863" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_4bb3bbb12261e5a5d4aa2d357b76a4dc.setContent(html_918513ffaf6f04e037e523f9795da863);
+            
+        
+
+        circle_marker_28b0c4db84011402b15c648a3d918f8a.bindPopup(popup_4bb3bbb12261e5a5d4aa2d357b76a4dc)
+        ;
+
+        
+    
+    
+            var circle_marker_0fafb7b2100dd5455a9a8c2f98a67f1e = L.circleMarker(
+                [7.1558337212, -73.1115722656],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_a4c328530db6728628e7a41be8ed8e5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_154e028ed51d0170ffeb9b9fe54dc8d7 = $(`<div id="html_154e028ed51d0170ffeb9b9fe54dc8d7" style="width: 100.0%; height: 100.0%;"><strong>BUCARAMANGA, SANTANDER</strong><br>Precio: $2,550</div>`)[0];
+                popup_a4c328530db6728628e7a41be8ed8e5b.setContent(html_154e028ed51d0170ffeb9b9fe54dc8d7);
+            
+        
+
+        circle_marker_0fafb7b2100dd5455a9a8c2f98a67f1e.bindPopup(popup_a4c328530db6728628e7a41be8ed8e5b)
+        ;
+
+        
+    
+    
+            var circle_marker_50a678d908876d0880e1d16ab932f1b6 = L.circleMarker(
+                [3.5583927631, -76.2277984619],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_fef8ad0d224b577a08752a48c7901b34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de13efd5ee28eb67823d9926523687fd = $(`<div id="html_de13efd5ee28eb67823d9926523687fd" style="width: 100.0%; height: 100.0%;"><strong>PALMIRA, VALLE DEL CAUCA</strong><br>Precio: $3,529</div>`)[0];
+                popup_fef8ad0d224b577a08752a48c7901b34.setContent(html_de13efd5ee28eb67823d9926523687fd);
+            
+        
+
+        circle_marker_50a678d908876d0880e1d16ab932f1b6.bindPopup(popup_fef8ad0d224b577a08752a48c7901b34)
+        ;
+
+        
+    
+    
+            var circle_marker_ec1bb920c5cb458786585ca6eb1c444c = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_7eb72db1d6e920d5d8b4412713e3dab3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbae8fcb00b067b50ddcb943565a1856 = $(`<div id="html_fbae8fcb00b067b50ddcb943565a1856" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,590</div>`)[0];
+                popup_7eb72db1d6e920d5d8b4412713e3dab3.setContent(html_fbae8fcb00b067b50ddcb943565a1856);
+            
+        
+
+        circle_marker_ec1bb920c5cb458786585ca6eb1c444c.bindPopup(popup_7eb72db1d6e920d5d8b4412713e3dab3)
+        ;
+
+        
+    
+    
+            var circle_marker_0c1bf58aabce301b09daade6b52ef781 = L.circleMarker(
+                [8.5846977234, -75.950553894],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_ab264ac5f81269dfdbb65d5fdf7b5313 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e637014e18efcc524fc105861a7d1c9 = $(`<div id="html_6e637014e18efcc524fc105861a7d1c9" style="width: 100.0%; height: 100.0%;"><strong>MONTERIA, CORDOBA</strong><br>Precio: $2,852</div>`)[0];
+                popup_ab264ac5f81269dfdbb65d5fdf7b5313.setContent(html_6e637014e18efcc524fc105861a7d1c9);
+            
+        
+
+        circle_marker_0c1bf58aabce301b09daade6b52ef781.bindPopup(popup_ab264ac5f81269dfdbb65d5fdf7b5313)
+        ;
+
+        
+    
+    
+            var circle_marker_2f38bbf1f56dd4813914ec92dc41273c = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_da4cf432e9a71aa549846a006c43f758 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2468a4e2e62e995c124033bc21fc571f = $(`<div id="html_2468a4e2e62e995c124033bc21fc571f" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_da4cf432e9a71aa549846a006c43f758.setContent(html_2468a4e2e62e995c124033bc21fc571f);
+            
+        
+
+        circle_marker_2f38bbf1f56dd4813914ec92dc41273c.bindPopup(popup_da4cf432e9a71aa549846a006c43f758)
+        ;
+
+        
+    
+    
+            var circle_marker_5c0a7a80ac6ca9b8c014cfa4911d7d3d = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_7d66b6722e7dc60e076182c34fec5c17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e57e01aa23b25e31b03f3079ed9bc3af = $(`<div id="html_e57e01aa23b25e31b03f3079ed9bc3af" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,450</div>`)[0];
+                popup_7d66b6722e7dc60e076182c34fec5c17.setContent(html_e57e01aa23b25e31b03f3079ed9bc3af);
+            
+        
+
+        circle_marker_5c0a7a80ac6ca9b8c014cfa4911d7d3d.bindPopup(popup_7d66b6722e7dc60e076182c34fec5c17)
+        ;
+
+        
+    
+    
+            var circle_marker_9cbe173fe78fbec8ceb23d985da32064 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_dbd0348a0f6143f717734d7535692e9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c182e440e13675d5b1fdd9f4ac6a27c5 = $(`<div id="html_c182e440e13675d5b1fdd9f4ac6a27c5" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_dbd0348a0f6143f717734d7535692e9b.setContent(html_c182e440e13675d5b1fdd9f4ac6a27c5);
+            
+        
+
+        circle_marker_9cbe173fe78fbec8ceb23d985da32064.bindPopup(popup_dbd0348a0f6143f717734d7535692e9b)
+        ;
+
+        
+    
+    
+            var circle_marker_795e5d3d7f867909339799c5590a994b = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_cb0205e6ac8e4cbfa0813d045fa97310 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e85d993fbc150fe07d99b0a80190aaae = $(`<div id="html_e85d993fbc150fe07d99b0a80190aaae" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_cb0205e6ac8e4cbfa0813d045fa97310.setContent(html_e85d993fbc150fe07d99b0a80190aaae);
+            
+        
+
+        circle_marker_795e5d3d7f867909339799c5590a994b.bindPopup(popup_cb0205e6ac8e4cbfa0813d045fa97310)
+        ;
+
+        
+    
+    
+            var circle_marker_d2ecc627c1cb63b5fc568147dbfc8399 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_9b041348ba266dbeffb7747500b38ba4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fde72ed704d74b96760cba05d33a7808 = $(`<div id="html_fde72ed704d74b96760cba05d33a7808" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_9b041348ba266dbeffb7747500b38ba4.setContent(html_fde72ed704d74b96760cba05d33a7808);
+            
+        
+
+        circle_marker_d2ecc627c1cb63b5fc568147dbfc8399.bindPopup(popup_9b041348ba266dbeffb7747500b38ba4)
+        ;
+
+        
+    
+    
+            var circle_marker_a864e255d59cbb58c7270c99416d90a3 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_7be1b90a6c0297f9b0e7dfd7469a1ada = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_042073a743b545e2ba18b1e020556811 = $(`<div id="html_042073a743b545e2ba18b1e020556811" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_7be1b90a6c0297f9b0e7dfd7469a1ada.setContent(html_042073a743b545e2ba18b1e020556811);
+            
+        
+
+        circle_marker_a864e255d59cbb58c7270c99416d90a3.bindPopup(popup_7be1b90a6c0297f9b0e7dfd7469a1ada)
+        ;
+
+        
+    
+    
+            var circle_marker_92f2d8930b3e9e8f7ef2d83ddfe8f6ea = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8c342b0d9c7d64f0f04d0f3ab3595be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d86726c6bd3d645b449ffa8f2d14cfc6 = $(`<div id="html_d86726c6bd3d645b449ffa8f2d14cfc6" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,399</div>`)[0];
+                popup_8c342b0d9c7d64f0f04d0f3ab3595be9.setContent(html_d86726c6bd3d645b449ffa8f2d14cfc6);
+            
+        
+
+        circle_marker_92f2d8930b3e9e8f7ef2d83ddfe8f6ea.bindPopup(popup_8c342b0d9c7d64f0f04d0f3ab3595be9)
+        ;
+
+        
+    
+    
+            var circle_marker_89998fcc1ca9cfc540ba6b7cead697ec = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_bd8717d3889bb9efb7496a83a02ba237 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b42bf94bbdd3d46fb250cba0e11929c = $(`<div id="html_4b42bf94bbdd3d46fb250cba0e11929c" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_bd8717d3889bb9efb7496a83a02ba237.setContent(html_4b42bf94bbdd3d46fb250cba0e11929c);
+            
+        
+
+        circle_marker_89998fcc1ca9cfc540ba6b7cead697ec.bindPopup(popup_bd8717d3889bb9efb7496a83a02ba237)
+        ;
+
+        
+    
+    
+            var circle_marker_130b97b000c835ee321d9ea4eb32586f = L.circleMarker(
+                [11.0044221878, -74.9074020386],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_54ce6ebb594f1daf33b4d2cc0c80f63a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79431bb8a00d559693fed0b4a20cedb7 = $(`<div id="html_79431bb8a00d559693fed0b4a20cedb7" style="width: 100.0%; height: 100.0%;"><strong>PUERTO COLOMBIA, ATLANTICO</strong><br>Precio: $3,102</div>`)[0];
+                popup_54ce6ebb594f1daf33b4d2cc0c80f63a.setContent(html_79431bb8a00d559693fed0b4a20cedb7);
+            
+        
+
+        circle_marker_130b97b000c835ee321d9ea4eb32586f.bindPopup(popup_54ce6ebb594f1daf33b4d2cc0c80f63a)
+        ;
+
+        
+    
+    
+            var circle_marker_0cbe4beb169e5edb07ad628e638075a9 = L.circleMarker(
+                [4.7675466537, -74.1415557861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_e117e31744471c02109939aa98168c15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a80191a84af54c23f6af4c67778e3710 = $(`<div id="html_a80191a84af54c23f6af4c67778e3710" style="width: 100.0%; height: 100.0%;"><strong>COTA, CUNDINAMARCA</strong><br>Precio: $1,899</div>`)[0];
+                popup_e117e31744471c02109939aa98168c15.setContent(html_a80191a84af54c23f6af4c67778e3710);
+            
+        
+
+        circle_marker_0cbe4beb169e5edb07ad628e638075a9.bindPopup(popup_e117e31744471c02109939aa98168c15)
+        ;
+
+        
+    
+    
+            var circle_marker_240375508ca74feb34623f3fc02554d1 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_88e096a13c6a5bfc9c06a4812abad199 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5331d705a07580eaa2b424ec7b0802a = $(`<div id="html_f5331d705a07580eaa2b424ec7b0802a" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_88e096a13c6a5bfc9c06a4812abad199.setContent(html_f5331d705a07580eaa2b424ec7b0802a);
+            
+        
+
+        circle_marker_240375508ca74feb34623f3fc02554d1.bindPopup(popup_88e096a13c6a5bfc9c06a4812abad199)
+        ;
+
+        
+    
+    
+            var circle_marker_6980b0d90dc75365d706476f63445811 = L.circleMarker(
+                [4.8036627769, -75.795791626],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_2b42b6a9799db10a5fff101424fbb582 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6558feda5c6d1360108bd543e3940730 = $(`<div id="html_6558feda5c6d1360108bd543e3940730" style="width: 100.0%; height: 100.0%;"><strong>PEREIRA, RISARALDA</strong><br>Precio: $3,590</div>`)[0];
+                popup_2b42b6a9799db10a5fff101424fbb582.setContent(html_6558feda5c6d1360108bd543e3940730);
+            
+        
+
+        circle_marker_6980b0d90dc75365d706476f63445811.bindPopup(popup_2b42b6a9799db10a5fff101424fbb582)
+        ;
+
+        
+    
+    
+            var circle_marker_402d443d04ac85233c2973d023be7410 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_af49a5c6746eb3bad97235e5cc7caddd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b2eda1201de7362932e6a373c6ae564 = $(`<div id="html_0b2eda1201de7362932e6a373c6ae564" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_af49a5c6746eb3bad97235e5cc7caddd.setContent(html_0b2eda1201de7362932e6a373c6ae564);
+            
+        
+
+        circle_marker_402d443d04ac85233c2973d023be7410.bindPopup(popup_af49a5c6746eb3bad97235e5cc7caddd)
+        ;
+
+        
+    
+    
+            var circle_marker_45f5e79355d803d453b58a22bfa9614d = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8a20b5a87bf16719ae35fac789dd105e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00008c95ebefca6dbe8fe6ff12d08a6b = $(`<div id="html_00008c95ebefca6dbe8fe6ff12d08a6b" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,090</div>`)[0];
+                popup_8a20b5a87bf16719ae35fac789dd105e.setContent(html_00008c95ebefca6dbe8fe6ff12d08a6b);
+            
+        
+
+        circle_marker_45f5e79355d803d453b58a22bfa9614d.bindPopup(popup_8a20b5a87bf16719ae35fac789dd105e)
+        ;
+
+        
+    
+    
+            var circle_marker_906e77dcda99bb48a15e811a83ea21eb = L.circleMarker(
+                [5.0834331512, -75.5072784424],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f343530536f99733f82233680c94a1c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bd13bc18fcfed0274e8e5cdd673283a = $(`<div id="html_8bd13bc18fcfed0274e8e5cdd673283a" style="width: 100.0%; height: 100.0%;"><strong>MANIZALES, CALDAS</strong><br>Precio: $3,597</div>`)[0];
+                popup_f343530536f99733f82233680c94a1c8.setContent(html_8bd13bc18fcfed0274e8e5cdd673283a);
+            
+        
+
+        circle_marker_906e77dcda99bb48a15e811a83ea21eb.bindPopup(popup_f343530536f99733f82233680c94a1c8)
+        ;
+
+        
+    
+    
+            var circle_marker_03143f78aeda44dbd8323d8b90bca19a = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_25861ff30a50f7024ec458e1294bb95e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5e750f82218c82709c4899a8aad4399 = $(`<div id="html_c5e750f82218c82709c4899a8aad4399" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_25861ff30a50f7024ec458e1294bb95e.setContent(html_c5e750f82218c82709c4899a8aad4399);
+            
+        
+
+        circle_marker_03143f78aeda44dbd8323d8b90bca19a.bindPopup(popup_25861ff30a50f7024ec458e1294bb95e)
+        ;
+
+        
+    
+    
+            var circle_marker_8dcd6983b34437b3607c3beb67a0ac0f = L.circleMarker(
+                [9.9463911057, -73.8662872314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_5511a7ee31f45dcc62876fe03bdc8f38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8024b407c83bbfac224e02ecf52fd25f = $(`<div id="html_8024b407c83bbfac224e02ecf52fd25f" style="width: 100.0%; height: 100.0%;"><strong>BOSCONIA, CESAR</strong><br>Precio: $3,018</div>`)[0];
+                popup_5511a7ee31f45dcc62876fe03bdc8f38.setContent(html_8024b407c83bbfac224e02ecf52fd25f);
+            
+        
+
+        circle_marker_8dcd6983b34437b3607c3beb67a0ac0f.bindPopup(popup_5511a7ee31f45dcc62876fe03bdc8f38)
+        ;
+
+        
+    
+    
+            var circle_marker_9e424afe3dfdbe557ebda19e0acd81a2 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_1ea174af8e8d20cb1b1008bf4c353f27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d07d12be10b4a2f03b15f80ad8bda8f = $(`<div id="html_4d07d12be10b4a2f03b15f80ad8bda8f" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_1ea174af8e8d20cb1b1008bf4c353f27.setContent(html_4d07d12be10b4a2f03b15f80ad8bda8f);
+            
+        
+
+        circle_marker_9e424afe3dfdbe557ebda19e0acd81a2.bindPopup(popup_1ea174af8e8d20cb1b1008bf4c353f27)
+        ;
+
+        
+    
+    
+            var circle_marker_8177fefd233124fec9c241cd322d1e3c = L.circleMarker(
+                [4.7068471909, -75.9179077148],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_9ee26b009bdc6e9e9c02b69e147e2274 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_caa359f634fd260abd5f9d126bea6241 = $(`<div id="html_caa359f634fd260abd5f9d126bea6241" style="width: 100.0%; height: 100.0%;"><strong>CARTAGO, VALLE DEL CAUCA</strong><br>Precio: $3,049</div>`)[0];
+                popup_9ee26b009bdc6e9e9c02b69e147e2274.setContent(html_caa359f634fd260abd5f9d126bea6241);
+            
+        
+
+        circle_marker_8177fefd233124fec9c241cd322d1e3c.bindPopup(popup_9ee26b009bdc6e9e9c02b69e147e2274)
+        ;
+
+        
+    
+    
+            var circle_marker_c509694bdf154c6497f702da88676561 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_9212ef1c4f64bdac052faf14401d26fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_195848f51b3a9aeb552ceb847da3ae3d = $(`<div id="html_195848f51b3a9aeb552ceb847da3ae3d" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,080</div>`)[0];
+                popup_9212ef1c4f64bdac052faf14401d26fc.setContent(html_195848f51b3a9aeb552ceb847da3ae3d);
+            
+        
+
+        circle_marker_c509694bdf154c6497f702da88676561.bindPopup(popup_9212ef1c4f64bdac052faf14401d26fc)
+        ;
+
+        
+    
+    
+            var circle_marker_14a11343987dc9c65d74cf876ad7d93b = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_259fe8905c798871937ec89750745c98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93d7f02e92cb55ea75014812a7dfa05b = $(`<div id="html_93d7f02e92cb55ea75014812a7dfa05b" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_259fe8905c798871937ec89750745c98.setContent(html_93d7f02e92cb55ea75014812a7dfa05b);
+            
+        
+
+        circle_marker_14a11343987dc9c65d74cf876ad7d93b.bindPopup(popup_259fe8905c798871937ec89750745c98)
+        ;
+
+        
+    
+    
+            var circle_marker_dbb06efce9c3e065fc491a93467014e0 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8facdf7121c83f5120a63a4de6da8baa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8005cbd8ff4c7a13ca516d455d138d8 = $(`<div id="html_a8005cbd8ff4c7a13ca516d455d138d8" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_8facdf7121c83f5120a63a4de6da8baa.setContent(html_a8005cbd8ff4c7a13ca516d455d138d8);
+            
+        
+
+        circle_marker_dbb06efce9c3e065fc491a93467014e0.bindPopup(popup_8facdf7121c83f5120a63a4de6da8baa)
+        ;
+
+        
+    
+    
+            var circle_marker_4359fbd70a0b41b73eb8cb67887eb0a5 = L.circleMarker(
+                [6.3588409424, -75.5897369385],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_23af36361757392ea5568c08bd6073b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c290d75a5606bb25131950737b3df399 = $(`<div id="html_c290d75a5606bb25131950737b3df399" style="width: 100.0%; height: 100.0%;"><strong>BELLO, ANTIOQUIA</strong><br>Precio: $3,598</div>`)[0];
+                popup_23af36361757392ea5568c08bd6073b2.setContent(html_c290d75a5606bb25131950737b3df399);
+            
+        
+
+        circle_marker_4359fbd70a0b41b73eb8cb67887eb0a5.bindPopup(popup_23af36361757392ea5568c08bd6073b2)
+        ;
+
+        
+    
+    
+            var circle_marker_61ecb589f5876d591c2dbd05d359b891 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_4c19cd5616e52ca7f2f1398d14711e25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81bb33858d7a8db00669840ff85858e9 = $(`<div id="html_81bb33858d7a8db00669840ff85858e9" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_4c19cd5616e52ca7f2f1398d14711e25.setContent(html_81bb33858d7a8db00669840ff85858e9);
+            
+        
+
+        circle_marker_61ecb589f5876d591c2dbd05d359b891.bindPopup(popup_4c19cd5616e52ca7f2f1398d14711e25)
+        ;
+
+        
+    
+    
+            var circle_marker_8590613fc41d6f3d27016bb2109e7581 = L.circleMarker(
+                [11.1218948364, -73.8852767944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_fab09c8af54c15c0743f6963bb740031 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e30c6bd7e929483afb53575e36dd9275 = $(`<div id="html_e30c6bd7e929483afb53575e36dd9275" style="width: 100.0%; height: 100.0%;"><strong>SANTA MARTA, MAGDALENA</strong><br>Precio: $3,067</div>`)[0];
+                popup_fab09c8af54c15c0743f6963bb740031.setContent(html_e30c6bd7e929483afb53575e36dd9275);
+            
+        
+
+        circle_marker_8590613fc41d6f3d27016bb2109e7581.bindPopup(popup_fab09c8af54c15c0743f6963bb740031)
+        ;
+
+        
+    
+    
+            var circle_marker_bd2b083f0a8da13e42f14e9a648c6a0b = L.circleMarker(
+                [10.8482885361, -74.8061752319],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_5c6bd0f91bdb2d49b5326b7f718af1f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bc42227c9ab99ef96f9430f2ffb5d8d = $(`<div id="html_1bc42227c9ab99ef96f9430f2ffb5d8d" style="width: 100.0%; height: 100.0%;"><strong>MALAMBO, ATLANTICO</strong><br>Precio: $2,858</div>`)[0];
+                popup_5c6bd0f91bdb2d49b5326b7f718af1f7.setContent(html_1bc42227c9ab99ef96f9430f2ffb5d8d);
+            
+        
+
+        circle_marker_bd2b083f0a8da13e42f14e9a648c6a0b.bindPopup(popup_5c6bd0f91bdb2d49b5326b7f718af1f7)
+        ;
+
+        
+    
+    
+            var circle_marker_b563d436294aed69369513f34e9a47bb = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_30b86ce27c65b8688384aa38b8e58873 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5a254f25ff16e50ff465f66119643d0 = $(`<div id="html_a5a254f25ff16e50ff465f66119643d0" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_30b86ce27c65b8688384aa38b8e58873.setContent(html_a5a254f25ff16e50ff465f66119643d0);
+            
+        
+
+        circle_marker_b563d436294aed69369513f34e9a47bb.bindPopup(popup_30b86ce27c65b8688384aa38b8e58873)
+        ;
+
+        
+    
+    
+            var circle_marker_0de74cd08aae39e38c328126c1165340 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_6bbcd589c35ba9ee671251f8f1984d66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1b8404589683aec17483dcb31893ccb = $(`<div id="html_e1b8404589683aec17483dcb31893ccb" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $1,899</div>`)[0];
+                popup_6bbcd589c35ba9ee671251f8f1984d66.setContent(html_e1b8404589683aec17483dcb31893ccb);
+            
+        
+
+        circle_marker_0de74cd08aae39e38c328126c1165340.bindPopup(popup_6bbcd589c35ba9ee671251f8f1984d66)
+        ;
+
+        
+    
+    
+            var circle_marker_d88caae085d0eaaae58367c9e1f1c959 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_ddf5e158e0558fe57d8cf5f8350d25b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4a017fffcdd98022b09b548c212400c = $(`<div id="html_a4a017fffcdd98022b09b548c212400c" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $2,820</div>`)[0];
+                popup_ddf5e158e0558fe57d8cf5f8350d25b6.setContent(html_a4a017fffcdd98022b09b548c212400c);
+            
+        
+
+        circle_marker_d88caae085d0eaaae58367c9e1f1c959.bindPopup(popup_ddf5e158e0558fe57d8cf5f8350d25b6)
+        ;
+
+        
+    
+    
+            var circle_marker_a99c64305ee4d96691841cbb6d04ac87 = L.circleMarker(
+                [9.9463911057, -73.8662872314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_24cf710b6ea3518cc8cd41d72cb09f5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1765d6f5dae83fe8dfbf6b5c52cf9d4c = $(`<div id="html_1765d6f5dae83fe8dfbf6b5c52cf9d4c" style="width: 100.0%; height: 100.0%;"><strong>BOSCONIA, CESAR</strong><br>Precio: $3,018</div>`)[0];
+                popup_24cf710b6ea3518cc8cd41d72cb09f5e.setContent(html_1765d6f5dae83fe8dfbf6b5c52cf9d4c);
+            
+        
+
+        circle_marker_a99c64305ee4d96691841cbb6d04ac87.bindPopup(popup_24cf710b6ea3518cc8cd41d72cb09f5e)
+        ;
+
+        
+    
+    
+            var circle_marker_b8dd50ed04a6526b2f9cfd6d09ecf805 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8cf025d2c495be7452e50c191e483e41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c932b0db0f110ae6493a70e82f0286ef = $(`<div id="html_c932b0db0f110ae6493a70e82f0286ef" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,850</div>`)[0];
+                popup_8cf025d2c495be7452e50c191e483e41.setContent(html_c932b0db0f110ae6493a70e82f0286ef);
+            
+        
+
+        circle_marker_b8dd50ed04a6526b2f9cfd6d09ecf805.bindPopup(popup_8cf025d2c495be7452e50c191e483e41)
+        ;
+
+        
+    
+    
+            var circle_marker_8095ccd0f804c2d0e5e16508f404dc72 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_490a1197d607d8c02b22de1540eff956 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20b76f83641c8d9a0af6b7cbfee078fc = $(`<div id="html_20b76f83641c8d9a0af6b7cbfee078fc" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,117</div>`)[0];
+                popup_490a1197d607d8c02b22de1540eff956.setContent(html_20b76f83641c8d9a0af6b7cbfee078fc);
+            
+        
+
+        circle_marker_8095ccd0f804c2d0e5e16508f404dc72.bindPopup(popup_490a1197d607d8c02b22de1540eff956)
+        ;
+
+        
+    
+    
+            var circle_marker_eb010067232c4fc1e0c5ddb72d36dbea = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_db32a9b53e5b44fc32b5d855db817950 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4cceb27b8efa6cb6d1085cac4968c04 = $(`<div id="html_a4cceb27b8efa6cb6d1085cac4968c04" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,117</div>`)[0];
+                popup_db32a9b53e5b44fc32b5d855db817950.setContent(html_a4cceb27b8efa6cb6d1085cac4968c04);
+            
+        
+
+        circle_marker_eb010067232c4fc1e0c5ddb72d36dbea.bindPopup(popup_db32a9b53e5b44fc32b5d855db817950)
+        ;
+
+        
+    
+    
+            var circle_marker_dfbb7877199d6f6fb06e32e2396420b2 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_bd16e9812d255fbf5ba9bdf4c6f2ebd7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6530caf474bfdef3274037f9494ed5a = $(`<div id="html_a6530caf474bfdef3274037f9494ed5a" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,067</div>`)[0];
+                popup_bd16e9812d255fbf5ba9bdf4c6f2ebd7.setContent(html_a6530caf474bfdef3274037f9494ed5a);
+            
+        
+
+        circle_marker_dfbb7877199d6f6fb06e32e2396420b2.bindPopup(popup_bd16e9812d255fbf5ba9bdf4c6f2ebd7)
+        ;
+
+        
+    
+    
+            var circle_marker_c8c5c304cbb2638dacb83f37ea4950f4 = L.circleMarker(
+                [10.2189025879, -73.4578475952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f0ccac8ab4e7ba8591946119105e7261 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1b72ebf10b944c5b1fff38cd74c1dd8 = $(`<div id="html_a1b72ebf10b944c5b1fff38cd74c1dd8" style="width: 100.0%; height: 100.0%;"><strong>VALLEDUPAR, CESAR</strong><br>Precio: $2,769</div>`)[0];
+                popup_f0ccac8ab4e7ba8591946119105e7261.setContent(html_a1b72ebf10b944c5b1fff38cd74c1dd8);
+            
+        
+
+        circle_marker_c8c5c304cbb2638dacb83f37ea4950f4.bindPopup(popup_f0ccac8ab4e7ba8591946119105e7261)
+        ;
+
+        
+    
+    
+            var circle_marker_ffa1d9f5205a6e8a83554456ca046880 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_0918fd678310cc1449e20289a193d4a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c77de4d68e4b3866f6d4b535bbae302 = $(`<div id="html_2c77de4d68e4b3866f6d4b535bbae302" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,120</div>`)[0];
+                popup_0918fd678310cc1449e20289a193d4a5.setContent(html_2c77de4d68e4b3866f6d4b535bbae302);
+            
+        
+
+        circle_marker_ffa1d9f5205a6e8a83554456ca046880.bindPopup(popup_0918fd678310cc1449e20289a193d4a5)
+        ;
+
+        
+    
+    
+            var circle_marker_e53ba3252cf6a5e5f1cbd7804b5b970a = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_fd4bdbfae9049aff310024dcd01501d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a638080c9cd21c512e46185719f8302f = $(`<div id="html_a638080c9cd21c512e46185719f8302f" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,067</div>`)[0];
+                popup_fd4bdbfae9049aff310024dcd01501d0.setContent(html_a638080c9cd21c512e46185719f8302f);
+            
+        
+
+        circle_marker_e53ba3252cf6a5e5f1cbd7804b5b970a.bindPopup(popup_fd4bdbfae9049aff310024dcd01501d0)
+        ;
+
+        
+    
+    
+            var circle_marker_9e116b21b0af60fdce202a52a9943f2b = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_46189041fb6248ade902d9bde841a74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb365e3134982d406560c9fb4d8a23c7 = $(`<div id="html_bb365e3134982d406560c9fb4d8a23c7" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,590</div>`)[0];
+                popup_46189041fb6248ade902d9bde841a74f.setContent(html_bb365e3134982d406560c9fb4d8a23c7);
+            
+        
+
+        circle_marker_9e116b21b0af60fdce202a52a9943f2b.bindPopup(popup_46189041fb6248ade902d9bde841a74f)
+        ;
+
+        
+    
+    
+            var circle_marker_cb61fcee7f39573fd8fc706aa415a110 = L.circleMarker(
+                [10.4634332657, -75.4589004517],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_97b0b7228bf2829fe1cb0f88bb589184 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51b19cf037f09a022291436cc9cfaec3 = $(`<div id="html_51b19cf037f09a022291436cc9cfaec3" style="width: 100.0%; height: 100.0%;"><strong>CARTAGENA DE INDIAS, BOLIVAR</strong><br>Precio: $2,904</div>`)[0];
+                popup_97b0b7228bf2829fe1cb0f88bb589184.setContent(html_51b19cf037f09a022291436cc9cfaec3);
+            
+        
+
+        circle_marker_cb61fcee7f39573fd8fc706aa415a110.bindPopup(popup_97b0b7228bf2829fe1cb0f88bb589184)
+        ;
+
+        
+    
+    
+            var circle_marker_1dac5bb1c1c94a84fde0256edaf508cb = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_fc0fcc5c577b7a45361244f2a84ff161 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a69643a9c496bddc0f953de74fe49c5 = $(`<div id="html_8a69643a9c496bddc0f953de74fe49c5" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,394</div>`)[0];
+                popup_fc0fcc5c577b7a45361244f2a84ff161.setContent(html_8a69643a9c496bddc0f953de74fe49c5);
+            
+        
+
+        circle_marker_1dac5bb1c1c94a84fde0256edaf508cb.bindPopup(popup_fc0fcc5c577b7a45361244f2a84ff161)
+        ;
+
+        
+    
+    
+            var circle_marker_ad1d55ce1c595bc68bb6d662ead0703c = L.circleMarker(
+                [4.8578238487, -74.0380935669],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_db63cf73f223c1d76b98b76824a9ef4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8a3cda9ba0e8eee6d637d7646decaf9 = $(`<div id="html_f8a3cda9ba0e8eee6d637d7646decaf9" style="width: 100.0%; height: 100.0%;"><strong>CHIA, CUNDINAMARCA</strong><br>Precio: $2,499</div>`)[0];
+                popup_db63cf73f223c1d76b98b76824a9ef4d.setContent(html_f8a3cda9ba0e8eee6d637d7646decaf9);
+            
+        
+
+        circle_marker_ad1d55ce1c595bc68bb6d662ead0703c.bindPopup(popup_db63cf73f223c1d76b98b76824a9ef4d)
+        ;
+
+        
+    
+    
+            var circle_marker_cfa427b92094e5f0cbe3a3c14875b55d = L.circleMarker(
+                [3.5959136486, -76.5109863281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3906b3f70142473d6953f9930288e611 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ba216ae293b263992095ceb504c6b71 = $(`<div id="html_1ba216ae293b263992095ceb504c6b71" style="width: 100.0%; height: 100.0%;"><strong>YUMBO, VALLE DEL CAUCA</strong><br>Precio: $2,799</div>`)[0];
+                popup_3906b3f70142473d6953f9930288e611.setContent(html_1ba216ae293b263992095ceb504c6b71);
+            
+        
+
+        circle_marker_cfa427b92094e5f0cbe3a3c14875b55d.bindPopup(popup_3906b3f70142473d6953f9930288e611)
+        ;
+
+        
+    
+    
+            var circle_marker_86f79b8e7e60d51fe0142e391529be20 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f9039049f228a03115ffeaef5420065c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2aabe39288f46fd5efdf98660373cb30 = $(`<div id="html_2aabe39288f46fd5efdf98660373cb30" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,550</div>`)[0];
+                popup_f9039049f228a03115ffeaef5420065c.setContent(html_2aabe39288f46fd5efdf98660373cb30);
+            
+        
+
+        circle_marker_86f79b8e7e60d51fe0142e391529be20.bindPopup(popup_f9039049f228a03115ffeaef5420065c)
+        ;
+
+        
+    
+    
+            var circle_marker_c3502ad5a345aff44702f27e4491f004 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_98566d61c8b6756c441b6a49b433c775 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_990b42ecd2a88968fc164bed65c1c891 = $(`<div id="html_990b42ecd2a88968fc164bed65c1c891" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,399</div>`)[0];
+                popup_98566d61c8b6756c441b6a49b433c775.setContent(html_990b42ecd2a88968fc164bed65c1c891);
+            
+        
+
+        circle_marker_c3502ad5a345aff44702f27e4491f004.bindPopup(popup_98566d61c8b6756c441b6a49b433c775)
+        ;
+
+        
+    
+    
+            var circle_marker_6c6ff8e689e9b3f3990691517edb27ac = L.circleMarker(
+                [4.6727142334, -74.2357330322],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_7565ecb3a8d48c1464d2ebfdf31b9f8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f17ca2e8a695f218a84bac601bc61aa1 = $(`<div id="html_f17ca2e8a695f218a84bac601bc61aa1" style="width: 100.0%; height: 100.0%;"><strong>MOSQUERA, CUNDINAMARCA</strong><br>Precio: $2,499</div>`)[0];
+                popup_7565ecb3a8d48c1464d2ebfdf31b9f8b.setContent(html_f17ca2e8a695f218a84bac601bc61aa1);
+            
+        
+
+        circle_marker_6c6ff8e689e9b3f3990691517edb27ac.bindPopup(popup_7565ecb3a8d48c1464d2ebfdf31b9f8b)
+        ;
+
+        
+    
+    
+            var circle_marker_66aeee12773944c427629ebdcec31a3f = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_104445f753ba566059e5e82751d9a5e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c091a4d5df277857a47ce828490945f0 = $(`<div id="html_c091a4d5df277857a47ce828490945f0" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,399</div>`)[0];
+                popup_104445f753ba566059e5e82751d9a5e8.setContent(html_c091a4d5df277857a47ce828490945f0);
+            
+        
+
+        circle_marker_66aeee12773944c427629ebdcec31a3f.bindPopup(popup_104445f753ba566059e5e82751d9a5e8)
+        ;
+
+        
+    
+    
+            var circle_marker_99d635c5ccac296d745442a97aa506b4 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_a29397c33002e4f726a5b15dd44f94c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9483816e2096c453563799d324ad8762 = $(`<div id="html_9483816e2096c453563799d324ad8762" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,120</div>`)[0];
+                popup_a29397c33002e4f726a5b15dd44f94c2.setContent(html_9483816e2096c453563799d324ad8762);
+            
+        
+
+        circle_marker_99d635c5ccac296d745442a97aa506b4.bindPopup(popup_a29397c33002e4f726a5b15dd44f94c2)
+        ;
+
+        
+    
+    
+            var circle_marker_5846eb4da2ac90e352fad69c47344516 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_92d3ad7ef5361612541acb388a8e3399 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3e015ff15045c1f0a4d8369054e4811 = $(`<div id="html_e3e015ff15045c1f0a4d8369054e4811" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $2,858</div>`)[0];
+                popup_92d3ad7ef5361612541acb388a8e3399.setContent(html_e3e015ff15045c1f0a4d8369054e4811);
+            
+        
+
+        circle_marker_5846eb4da2ac90e352fad69c47344516.bindPopup(popup_92d3ad7ef5361612541acb388a8e3399)
+        ;
+
+        
+    
+    
+            var circle_marker_54c8fee844c0486f8690ab7e1552f7c1 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_de96c20f3197f696920d582351e50933 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c93886772e33e099de5c853b70164ae = $(`<div id="html_8c93886772e33e099de5c853b70164ae" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,107</div>`)[0];
+                popup_de96c20f3197f696920d582351e50933.setContent(html_8c93886772e33e099de5c853b70164ae);
+            
+        
+
+        circle_marker_54c8fee844c0486f8690ab7e1552f7c1.bindPopup(popup_de96c20f3197f696920d582351e50933)
+        ;
+
+        
+    
+    
+            var circle_marker_afe6d82a208c1cec78f0af59caa730ff = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_acfc397f7b0ec852b0263e1ee5ad7927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8042b288c2413d776b2db655866a3ca4 = $(`<div id="html_8042b288c2413d776b2db655866a3ca4" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,117</div>`)[0];
+                popup_acfc397f7b0ec852b0263e1ee5ad7927.setContent(html_8042b288c2413d776b2db655866a3ca4);
+            
+        
+
+        circle_marker_afe6d82a208c1cec78f0af59caa730ff.bindPopup(popup_acfc397f7b0ec852b0263e1ee5ad7927)
+        ;
+
+        
+    
+    
+            var circle_marker_7b242db0fb303cfcd6c69756263d9916 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_accc7d9083d787998eb81ae78eddffdc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5751dbc5a09c2dcf9395af3712309df0 = $(`<div id="html_5751dbc5a09c2dcf9395af3712309df0" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,399</div>`)[0];
+                popup_accc7d9083d787998eb81ae78eddffdc.setContent(html_5751dbc5a09c2dcf9395af3712309df0);
+            
+        
+
+        circle_marker_7b242db0fb303cfcd6c69756263d9916.bindPopup(popup_accc7d9083d787998eb81ae78eddffdc)
+        ;
+
+        
+    
+    
+            var circle_marker_eb6fe040f3aef0fdbf705fab2a576598 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_804713bdca1cbacd71a6420a8768bc00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_571b3defb09d6420c70e03880e046627 = $(`<div id="html_571b3defb09d6420c70e03880e046627" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,117</div>`)[0];
+                popup_804713bdca1cbacd71a6420a8768bc00.setContent(html_571b3defb09d6420c70e03880e046627);
+            
+        
+
+        circle_marker_eb6fe040f3aef0fdbf705fab2a576598.bindPopup(popup_804713bdca1cbacd71a6420a8768bc00)
+        ;
+
+        
+    
+    
+            var circle_marker_3cd039cb1c77d5a7828cfd9b2bdcfc05 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_1543e6811f2938c06947c2a93d14331d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe0428a27051b385bf621a55942cac4c = $(`<div id="html_fe0428a27051b385bf621a55942cac4c" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $2,962</div>`)[0];
+                popup_1543e6811f2938c06947c2a93d14331d.setContent(html_fe0428a27051b385bf621a55942cac4c);
+            
+        
+
+        circle_marker_3cd039cb1c77d5a7828cfd9b2bdcfc05.bindPopup(popup_1543e6811f2938c06947c2a93d14331d)
+        ;
+
+        
+    
+    
+            var circle_marker_7768c33858488b730a760273016f37a7 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_68430a12b2324a502fa10991ae775031 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18b3f422e25f7b13d3ea0fdbd6a3a022 = $(`<div id="html_18b3f422e25f7b13d3ea0fdbd6a3a022" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $2,967</div>`)[0];
+                popup_68430a12b2324a502fa10991ae775031.setContent(html_18b3f422e25f7b13d3ea0fdbd6a3a022);
+            
+        
+
+        circle_marker_7768c33858488b730a760273016f37a7.bindPopup(popup_68430a12b2324a502fa10991ae775031)
+        ;
+
+        
+    
+    
+            var circle_marker_c0c845b709afdf873c3993473251f87b = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_dfa6fc323cf8aca9141bc8ca54fa3cb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e2bcfe1f788d361a0bc147c50bfed9f = $(`<div id="html_0e2bcfe1f788d361a0bc147c50bfed9f" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,399</div>`)[0];
+                popup_dfa6fc323cf8aca9141bc8ca54fa3cb4.setContent(html_0e2bcfe1f788d361a0bc147c50bfed9f);
+            
+        
+
+        circle_marker_c0c845b709afdf873c3993473251f87b.bindPopup(popup_dfa6fc323cf8aca9141bc8ca54fa3cb4)
+        ;
+
+        
+    
+    
+            var circle_marker_61e94d42c42b41863c5844fd5a7b7e4a = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3cda666dbd0107b196b0a06832aa9529 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e15076c614f221caac80f5c6a9debc2a = $(`<div id="html_e15076c614f221caac80f5c6a9debc2a" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,399</div>`)[0];
+                popup_3cda666dbd0107b196b0a06832aa9529.setContent(html_e15076c614f221caac80f5c6a9debc2a);
+            
+        
+
+        circle_marker_61e94d42c42b41863c5844fd5a7b7e4a.bindPopup(popup_3cda666dbd0107b196b0a06832aa9529)
+        ;
+
+        
+    
+    
+            var circle_marker_e46fb6aba32cc93fbd465d4a9b8876a1 = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_68fb8140182db19b92274132c5aef9af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8a0b17487a1324adc677ffb512c053e = $(`<div id="html_b8a0b17487a1324adc677ffb512c053e" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,399</div>`)[0];
+                popup_68fb8140182db19b92274132c5aef9af.setContent(html_b8a0b17487a1324adc677ffb512c053e);
+            
+        
+
+        circle_marker_e46fb6aba32cc93fbd465d4a9b8876a1.bindPopup(popup_68fb8140182db19b92274132c5aef9af)
+        ;
+
+        
+    
+    
+            var circle_marker_aedb75bf417723523d2b7b153fdc4fa4 = L.circleMarker(
+                [11.1218948364, -73.8852767944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_c0cebe83737f9e8eab9b7f4635715ac1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad73dd58c53b504fd05231bd72109d1a = $(`<div id="html_ad73dd58c53b504fd05231bd72109d1a" style="width: 100.0%; height: 100.0%;"><strong>SANTA MARTA, MAGDALENA</strong><br>Precio: $3,067</div>`)[0];
+                popup_c0cebe83737f9e8eab9b7f4635715ac1.setContent(html_ad73dd58c53b504fd05231bd72109d1a);
+            
+        
+
+        circle_marker_aedb75bf417723523d2b7b153fdc4fa4.bindPopup(popup_c0cebe83737f9e8eab9b7f4635715ac1)
+        ;
+
+        
+    
+    
+            var circle_marker_5f30763326c81dc4642290952dd94053 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_c4e95444460acbce20d0ebbe6ad9c102 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18ddabb9bd6f4bac0029b35db6e77b90 = $(`<div id="html_18ddabb9bd6f4bac0029b35db6e77b90" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,515</div>`)[0];
+                popup_c4e95444460acbce20d0ebbe6ad9c102.setContent(html_18ddabb9bd6f4bac0029b35db6e77b90);
+            
+        
+
+        circle_marker_5f30763326c81dc4642290952dd94053.bindPopup(popup_c4e95444460acbce20d0ebbe6ad9c102)
+        ;
+
+        
+    
+    
+            var circle_marker_a4d127e0baa4e5c9bb0035817e8fe5c0 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_39a22df362fbbbe3032daf073c1a5cc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57e27a03f24580eeff6ba9ef0445adb2 = $(`<div id="html_57e27a03f24580eeff6ba9ef0445adb2" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_39a22df362fbbbe3032daf073c1a5cc4.setContent(html_57e27a03f24580eeff6ba9ef0445adb2);
+            
+        
+
+        circle_marker_a4d127e0baa4e5c9bb0035817e8fe5c0.bindPopup(popup_39a22df362fbbbe3032daf073c1a5cc4)
+        ;
+
+        
+    
+    
+            var circle_marker_5bef11d862589847c8c21887fad82a45 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_a86a5219004694a84df1dafae82faa7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19051c919eca64476eca43dc0172061c = $(`<div id="html_19051c919eca64476eca43dc0172061c" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,400</div>`)[0];
+                popup_a86a5219004694a84df1dafae82faa7c.setContent(html_19051c919eca64476eca43dc0172061c);
+            
+        
+
+        circle_marker_5bef11d862589847c8c21887fad82a45.bindPopup(popup_a86a5219004694a84df1dafae82faa7c)
+        ;
+
+        
+    
+    
+            var circle_marker_6693cd007fb39226844af73c4b792a3a = L.circleMarker(
+                [5.5184726715, -73.3780212402],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_763b81b4afb8b09c115ad91883d024cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_797b82b3941fa3e9ad5f8bcd80dda739 = $(`<div id="html_797b82b3941fa3e9ad5f8bcd80dda739" style="width: 100.0%; height: 100.0%;"><strong>TUNJA, BOYACA</strong><br>Precio: $2,450</div>`)[0];
+                popup_763b81b4afb8b09c115ad91883d024cb.setContent(html_797b82b3941fa3e9ad5f8bcd80dda739);
+            
+        
+
+        circle_marker_6693cd007fb39226844af73c4b792a3a.bindPopup(popup_763b81b4afb8b09c115ad91883d024cb)
+        ;
+
+        
+    
+    
+            var circle_marker_53ae974d791ed0dc5a78be45ef285c65 = L.circleMarker(
+                [6.2575902939, -75.6110305786],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_2322a324a4d8859b538cb789bba958c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dccbdcc5a7907847cb9176d3c12213cb = $(`<div id="html_dccbdcc5a7907847cb9176d3c12213cb" style="width: 100.0%; height: 100.0%;"><strong>MEDELLIN, ANTIOQUIA</strong><br>Precio: $3,399</div>`)[0];
+                popup_2322a324a4d8859b538cb789bba958c5.setContent(html_dccbdcc5a7907847cb9176d3c12213cb);
+            
+        
+
+        circle_marker_53ae974d791ed0dc5a78be45ef285c65.bindPopup(popup_2322a324a4d8859b538cb789bba958c5)
+        ;
+
+        
+    
+    
+            var circle_marker_ac308861e01c22cffcc32883052e85ac = L.circleMarker(
+                [4.1095004082, -76.371055603],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8eb2377f935891833aa9ea8b5682ca5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1f3d13374eeb6970163dd9071b52c5c = $(`<div id="html_a1f3d13374eeb6970163dd9071b52c5c" style="width: 100.0%; height: 100.0%;"><strong>RIOFRIO, VALLE DEL CAUCA</strong><br>Precio: $2,990</div>`)[0];
+                popup_8eb2377f935891833aa9ea8b5682ca5b.setContent(html_a1f3d13374eeb6970163dd9071b52c5c);
+            
+        
+
+        circle_marker_ac308861e01c22cffcc32883052e85ac.bindPopup(popup_8eb2377f935891833aa9ea8b5682ca5b)
+        ;
+
+        
+    
+    
+            var circle_marker_fa19e5aa0d716d2089bc96da8d1a6ca5 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b48ed68e44b327d5534d61cd35be06cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48c2164b282990d6e8bce348fb8c6036 = $(`<div id="html_48c2164b282990d6e8bce348fb8c6036" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,099</div>`)[0];
+                popup_b48ed68e44b327d5534d61cd35be06cc.setContent(html_48c2164b282990d6e8bce348fb8c6036);
+            
+        
+
+        circle_marker_fa19e5aa0d716d2089bc96da8d1a6ca5.bindPopup(popup_b48ed68e44b327d5534d61cd35be06cc)
+        ;
+
+        
+    
+    
+            var circle_marker_a788bc22b20b50c7e4ff7bd4e758b0c4 = L.circleMarker(
+                [9.1606245041, -75.2385787964],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_08ddf61e771e1866bba3945697991d98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1215d52204c57b5e51069ee529cb2994 = $(`<div id="html_1215d52204c57b5e51069ee529cb2994" style="width: 100.0%; height: 100.0%;"><strong>COROZAL, SUCRE</strong><br>Precio: $2,879</div>`)[0];
+                popup_08ddf61e771e1866bba3945697991d98.setContent(html_1215d52204c57b5e51069ee529cb2994);
+            
+        
+
+        circle_marker_a788bc22b20b50c7e4ff7bd4e758b0c4.bindPopup(popup_08ddf61e771e1866bba3945697991d98)
+        ;
+
+        
+    
+    
+            var circle_marker_bf77a5431bd265117ed526aa9894d13b = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_3e3f8f3ef4dac6f93c0c820d69e285cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8da3a9ea0aa3d97e3b672ac4c1ade32 = $(`<div id="html_d8da3a9ea0aa3d97e3b672ac4c1ade32" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,159</div>`)[0];
+                popup_3e3f8f3ef4dac6f93c0c820d69e285cd.setContent(html_d8da3a9ea0aa3d97e3b672ac4c1ade32);
+            
+        
+
+        circle_marker_bf77a5431bd265117ed526aa9894d13b.bindPopup(popup_3e3f8f3ef4dac6f93c0c820d69e285cd)
+        ;
+
+        
+    
+    
+            var circle_marker_4be95781a40fc166fc65e12cc8e9c3fa = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_6a68e5750f23ec3cc05df19b5b1d59dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c59048982720234b7da1a9a84a2df75a = $(`<div id="html_c59048982720234b7da1a9a84a2df75a" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,094</div>`)[0];
+                popup_6a68e5750f23ec3cc05df19b5b1d59dd.setContent(html_c59048982720234b7da1a9a84a2df75a);
+            
+        
+
+        circle_marker_4be95781a40fc166fc65e12cc8e9c3fa.bindPopup(popup_6a68e5750f23ec3cc05df19b5b1d59dd)
+        ;
+
+        
+    
+    
+            var circle_marker_a14e98e9313364eada360796548f056b = L.circleMarker(
+                [3.2138924599, -76.6276016235],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_d098fbf7b748131d1706a88d1f45eb95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09995045ec0152bc08888be532369d7d = $(`<div id="html_09995045ec0152bc08888be532369d7d" style="width: 100.0%; height: 100.0%;"><strong>JAMUNDI, VALLE DEL CAUCA</strong><br>Precio: $3,350</div>`)[0];
+                popup_d098fbf7b748131d1706a88d1f45eb95.setContent(html_09995045ec0152bc08888be532369d7d);
+            
+        
+
+        circle_marker_a14e98e9313364eada360796548f056b.bindPopup(popup_d098fbf7b748131d1706a88d1f45eb95)
+        ;
+
+        
+    
+    
+            var circle_marker_243fb172ecb9baa8180e0abf8701cef3 = L.circleMarker(
+                [10.4634332657, -75.4589004517],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_b96f5703baec69fd664f198ed4014b05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26f6ce85f3e83a0b77f08343770c4ada = $(`<div id="html_26f6ce85f3e83a0b77f08343770c4ada" style="width: 100.0%; height: 100.0%;"><strong>CARTAGENA DE INDIAS, BOLIVAR</strong><br>Precio: $2,827</div>`)[0];
+                popup_b96f5703baec69fd664f198ed4014b05.setContent(html_26f6ce85f3e83a0b77f08343770c4ada);
+            
+        
+
+        circle_marker_243fb172ecb9baa8180e0abf8701cef3.bindPopup(popup_b96f5703baec69fd664f198ed4014b05)
+        ;
+
+        
+    
+    
+            var circle_marker_846dc775c56dade7340b6609809a9e8f = L.circleMarker(
+                [10.3531074524, -75.3797149658],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8f69efb3b0a0a71a9a68277ef9e10dc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c161db3af85e65aebe6cbd93581f8379 = $(`<div id="html_c161db3af85e65aebe6cbd93581f8379" style="width: 100.0%; height: 100.0%;"><strong>TURBACO, BOLIVAR</strong><br>Precio: $2,827</div>`)[0];
+                popup_8f69efb3b0a0a71a9a68277ef9e10dc9.setContent(html_c161db3af85e65aebe6cbd93581f8379);
+            
+        
+
+        circle_marker_846dc775c56dade7340b6609809a9e8f.bindPopup(popup_8f69efb3b0a0a71a9a68277ef9e10dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_4ab758c002138605625431a40eccf60e = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_5b4d375326f1892365559f222da2240b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ae6ed73cabb3af7052e379f0a7cd1e8 = $(`<div id="html_0ae6ed73cabb3af7052e379f0a7cd1e8" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,199</div>`)[0];
+                popup_5b4d375326f1892365559f222da2240b.setContent(html_0ae6ed73cabb3af7052e379f0a7cd1e8);
+            
+        
+
+        circle_marker_4ab758c002138605625431a40eccf60e.bindPopup(popup_5b4d375326f1892365559f222da2240b)
+        ;
+
+        
+    
+    
+            var circle_marker_5534401ee4e7c786ddd7dd07abdf94f5 = L.circleMarker(
+                [3.3990437984, -76.5764923096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_de68267a255863f77eb94346cf5c153e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d4c1103a97c949ec6ff660bdd70a31f = $(`<div id="html_2d4c1103a97c949ec6ff660bdd70a31f" style="width: 100.0%; height: 100.0%;"><strong>CALI, VALLE DEL CAUCA</strong><br>Precio: $3,130</div>`)[0];
+                popup_de68267a255863f77eb94346cf5c153e.setContent(html_2d4c1103a97c949ec6ff660bdd70a31f);
+            
+        
+
+        circle_marker_5534401ee4e7c786ddd7dd07abdf94f5.bindPopup(popup_de68267a255863f77eb94346cf5c153e)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6e805c4ebdfa2f4b48c1befd2983ed = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_522f00cb79a4cce6852a3af40df33e3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24dd0cf74b78b078f2d529b7102bf33f = $(`<div id="html_24dd0cf74b78b078f2d529b7102bf33f" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_522f00cb79a4cce6852a3af40df33e3d.setContent(html_24dd0cf74b78b078f2d529b7102bf33f);
+            
+        
+
+        circle_marker_aa6e805c4ebdfa2f4b48c1befd2983ed.bindPopup(popup_522f00cb79a4cce6852a3af40df33e3d)
+        ;
+
+        
+    
+    
+            var circle_marker_64dcb0c9c09aaaf242a84624c941c362 = L.circleMarker(
+                [8.5846977234, -75.950553894],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f70bda0ec1d00c50b5cf4814cea26be5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43979093d1d4217eb7757e9d15aec7d1 = $(`<div id="html_43979093d1d4217eb7757e9d15aec7d1" style="width: 100.0%; height: 100.0%;"><strong>MONTERIA, CORDOBA</strong><br>Precio: $2,850</div>`)[0];
+                popup_f70bda0ec1d00c50b5cf4814cea26be5.setContent(html_43979093d1d4217eb7757e9d15aec7d1);
+            
+        
+
+        circle_marker_64dcb0c9c09aaaf242a84624c941c362.bindPopup(popup_f70bda0ec1d00c50b5cf4814cea26be5)
+        ;
+
+        
+    
+    
+            var circle_marker_e5fc6db3886dfcc3bc9ded74cc2969c9 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_8929b2a62f25ab7fd1ba9c27d03b3ff8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6931ead2362b7d8430b4e6757d752852 = $(`<div id="html_6931ead2362b7d8430b4e6757d752852" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,839</div>`)[0];
+                popup_8929b2a62f25ab7fd1ba9c27d03b3ff8.setContent(html_6931ead2362b7d8430b4e6757d752852);
+            
+        
+
+        circle_marker_e5fc6db3886dfcc3bc9ded74cc2969c9.bindPopup(popup_8929b2a62f25ab7fd1ba9c27d03b3ff8)
+        ;
+
+        
+    
+    
+            var circle_marker_89dc4cae3b6f5237b1daea0163daed27 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_802ad47dc026352686a80fed3ca9ad73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c638af9e1d6ef207c52b3fe0244f3b74 = $(`<div id="html_c638af9e1d6ef207c52b3fe0244f3b74" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $2,530</div>`)[0];
+                popup_802ad47dc026352686a80fed3ca9ad73.setContent(html_c638af9e1d6ef207c52b3fe0244f3b74);
+            
+        
+
+        circle_marker_89dc4cae3b6f5237b1daea0163daed27.bindPopup(popup_802ad47dc026352686a80fed3ca9ad73)
+        ;
+
+        
+    
+    
+            var circle_marker_5051005794c0e72d0d6d1950b346a20c = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_9e007b8e0df3d9f482b5bdfeed871def = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_567c15b4f43c6f276818bb8747de8ff5 = $(`<div id="html_567c15b4f43c6f276818bb8747de8ff5" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_9e007b8e0df3d9f482b5bdfeed871def.setContent(html_567c15b4f43c6f276818bb8747de8ff5);
+            
+        
+
+        circle_marker_5051005794c0e72d0d6d1950b346a20c.bindPopup(popup_9e007b8e0df3d9f482b5bdfeed871def)
+        ;
+
+        
+    
+    
+            var circle_marker_49e2202782b5e2c7395e2c2130a7a1a1 = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_083b27ad63f7505c2fb4722c5f56212c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a801209e692774f8d6c77b9285c67d29 = $(`<div id="html_a801209e692774f8d6c77b9285c67d29" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,519</div>`)[0];
+                popup_083b27ad63f7505c2fb4722c5f56212c.setContent(html_a801209e692774f8d6c77b9285c67d29);
+            
+        
+
+        circle_marker_49e2202782b5e2c7395e2c2130a7a1a1.bindPopup(popup_083b27ad63f7505c2fb4722c5f56212c)
+        ;
+
+        
+    
+    
+            var circle_marker_3df6eec94b3d982563f673b3623a622e = L.circleMarker(
+                [7.1558337212, -73.1115722656],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_22010b1f5bb44f5ba16ff3099bd434cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20f0e48889d575e118e224e6fe677544 = $(`<div id="html_20f0e48889d575e118e224e6fe677544" style="width: 100.0%; height: 100.0%;"><strong>BUCARAMANGA, SANTANDER</strong><br>Precio: $2,550</div>`)[0];
+                popup_22010b1f5bb44f5ba16ff3099bd434cd.setContent(html_20f0e48889d575e118e224e6fe677544);
+            
+        
+
+        circle_marker_3df6eec94b3d982563f673b3623a622e.bindPopup(popup_22010b1f5bb44f5ba16ff3099bd434cd)
+        ;
+
+        
+    
+    
+            var circle_marker_1254a063d6d83474686c1312e9642f64 = L.circleMarker(
+                [10.9815206528, -74.8277130127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f7845692d31811806b7654f247064a70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b4988a8549264a6c46a703077cbe2a3 = $(`<div id="html_0b4988a8549264a6c46a703077cbe2a3" style="width: 100.0%; height: 100.0%;"><strong>BARRANQUILLA, ATLANTICO</strong><br>Precio: $3,107</div>`)[0];
+                popup_f7845692d31811806b7654f247064a70.setContent(html_0b4988a8549264a6c46a703077cbe2a3);
+            
+        
+
+        circle_marker_1254a063d6d83474686c1312e9642f64.bindPopup(popup_f7845692d31811806b7654f247064a70)
+        ;
+
+        
+    
+    
+            var circle_marker_b00a403679681b8e7714ee26b613995e = L.circleMarker(
+                [4.6529541016, -74.0835647583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_f935ea10cde1632d16becdcfa993f6ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_360100a52db07977f9dc6ed064e632eb = $(`<div id="html_360100a52db07977f9dc6ed064e632eb" style="width: 100.0%; height: 100.0%;"><strong>BOGOTA, D.C., BOGOTA D.C.</strong><br>Precio: $2,399</div>`)[0];
+                popup_f935ea10cde1632d16becdcfa993f6ba.setContent(html_360100a52db07977f9dc6ed064e632eb);
+            
+        
+
+        circle_marker_b00a403679681b8e7714ee26b613995e.bindPopup(popup_f935ea10cde1632d16becdcfa993f6ba)
+        ;
+
+        
+    
+    
+            var circle_marker_3694441f3e39abc1b2c7ae76d4c2bf0d = L.circleMarker(
+                [4.4995012283, -75.724899292],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_7261825ef9b40a2422cf636cfb84c15e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb66c672cef6b83c8234ebae498bcad4 = $(`<div id="html_cb66c672cef6b83c8234ebae498bcad4" style="width: 100.0%; height: 100.0%;"><strong>ARMENIA, QUINDIO</strong><br>Precio: $3,698</div>`)[0];
+                popup_7261825ef9b40a2422cf636cfb84c15e.setContent(html_cb66c672cef6b83c8234ebae498bcad4);
+            
+        
+
+        circle_marker_3694441f3e39abc1b2c7ae76d4c2bf0d.bindPopup(popup_7261825ef9b40a2422cf636cfb84c15e)
+        ;
+
+        
+    
+    
+            var circle_marker_285cf10deb306a92dedf2565e1600b90 = L.circleMarker(
+                [2.9933600426, -75.2723617554],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 0.5}
+            ).addTo(marker_cluster_46cf921d66bf44365152a71317ae867d);
+        
+    
+        var popup_e542ec490d262b6be1724ddb19d00bb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acaf0d42272295009fafb545170c2f43 = $(`<div id="html_acaf0d42272295009fafb545170c2f43" style="width: 100.0%; height: 100.0%;"><strong>NEIVA, HUILA</strong><br>Precio: $3,300</div>`)[0];
+                popup_e542ec490d262b6be1724ddb19d00bb7.setContent(html_acaf0d42272295009fafb545170c2f43);
+            
+        
+
+        circle_marker_285cf10deb306a92dedf2565e1600b90.bindPopup(popup_e542ec490d262b6be1724ddb19d00bb7)
+        ;
+
+        
+    
+    
+            marker_cluster_46cf921d66bf44365152a71317ae867d.addTo(map_1619738f991f0badf9ad84e0b57bc3f5);
+        
+</script>
+</html>
